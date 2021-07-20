@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-       
+    
+ 
     <!-- Some CSS -->
       <style>
       .carousel-caption {
@@ -40,37 +41,43 @@
         }  
   
       </style>
-      
-    
-    <!-- some Jquery -->
 
     <title>Eyas Rashid</title>
-  </head>
-    
-  <body>
-    <!-- alert -->
-    
+
+<script>
+$(document).ready(function(){
    
+   $('#Header').load("Header.html");
+   $('#Footer').load("Footer.html");
+
+});
+</script>
+    
+    </head>
+
+  <body>
+     <div id="Header"></div> 
       
-    <!-- inverse colored navigation bar -->
+    <!-- inverse colored navigation bar 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Eyas Rashid</a>
+                <a class="navbar-brand">Eyas Rashid</a>
             </div>
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="About.html">About me</a></li>
                     <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
                 </ul>
-                <ul class="nav navbar-nav" style="float:right">
-                    <li><a href="#"><span class="glyphicon glyphicon-envelope" style="font-size:22px"></span></a></li>
+                <ul class="nav navbar-nav">
+                    <li><a href="mailto:me@eyasrashid.com"><span class="glyphicon glyphicon-envelope" style="font-size:22px"></span></a></li>
                     <li><a href="https://www.linkedin.com/in/eyas-rashid-8b805849/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></li>        
                     <li><a href="https://github.com/EyasR"><i class="fa fa-github" style="font-size:24px"></i></a></li>
                     <li><a href="https://www.instagram.com/es206/"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
                 </ul>
         </div>
-    </nav>  
+    </nav>  -->
     
     <div class="jumbotron jumbostron fluid text-center"> 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -79,6 +86,7 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
     <!-- Wrapper for slides -->
@@ -87,7 +95,7 @@
          <img src="Seattle2.jpg" alt="Slide One" style="width:100%; height: auto;">
           <div class="carousel-caption">
             <h1>Hello I'm Eyas</h1>
-            <p>A Software Engineering Student at the University of Washington</p>
+            <p>A Software Engineer</p>
           </div>  
       </div>
 
@@ -95,17 +103,24 @@
           <a href="About.html"><img src="Nature.jpg" alt="Slide Two" style="width:100%; height: auto;"></a>
           <div class="carousel-caption">
             <h1><a href="About.html">About Me</a></h1>
-              <p><a href="About.html">Learn more about what I do when I am not studying</a> </p>
+              <p><a href="About.html">Learn more about me</a> </p>
           </div>
       </div>
     
       <div class="item">
-          <a href="Resume.html"><img src="Seattle2.jpg" alt="Slide Three" style="width:100%; height: auto;"></a>
+          <a href="Resume.html"><img src="Sunset1_auto_x2.jpg" alt="Slide Three" style="width:100%; height: auto;"></a>
            <div class="carousel-caption">
             <h1><a href="Resume.html">Resume</a></h1>
           </div>         
       </div>
+            <div class="item">
+          <a href="Projects.html"><img src="projects2.jpg" alt="Slide Three" style="width:100%; height: auto;"></a>
+           <div class="carousel-caption">
+            <h1><a href="Projects.html">Projects</a></h1>
+          </div>         
+      </div>    
     </div>
+        
 
     <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -118,12 +133,30 @@
         </a>
         </div> 
       </div>
-      
 
+      <div id="Footer"></div> 
+      
+<!--          <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Resume</h2>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Projects</h2>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+    </div>
+-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
